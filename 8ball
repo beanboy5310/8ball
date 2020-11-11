@@ -1,0 +1,73 @@
+#makin an 8ball cuz ethan asked me to
+import random
+import math
+a=random.randrange(1,21)
+if a<=10:
+  if a==1:
+    display1="IT IS CERTAIN"
+    display2=''
+  elif a==2:
+    display1="IT IS DECIDEDLY SO"
+    display2=''
+  elif a==3:
+    display1="WITHOUT A DOUBT"
+    display2=''
+  elif a==4:
+    display1="YES, DEFINITELY"
+    display2=''
+  elif a==5:
+    display1="YOU MAY RELY ON IT"
+    display2=''
+  elif a==6:
+    display1="AS I SEE IT..."
+    display2="YES"
+  elif a==7:
+    display1="MOST LIKELY"
+    display2=''
+  elif a==8:
+    display1="OUTLOOK"
+    display2="GOOD"
+  elif a==9:
+    display1="YES"
+    display2=''
+  elif a==10:
+    display1="SIGNS POINT TO"
+    display2="YES"
+elif a>10:
+  if a==11:
+    display1="REPLY HAZY, TRY AGAIN"
+    display2=''
+  elif a==12:
+    display1="ASK AGAIN LATER"
+    display2=''
+  elif a==13:
+    display1="BETTER NOT TELL YOU NOW"
+    display2=''
+  elif a==14:
+    display1="CANNOT PREDICT NOW"
+    display2=''
+  elif a==15:
+    display1="CONCENTRATE AND ASK AGAIN"
+    display2=''
+  elif a==16:
+    display1="DONT COUNT ON IT"
+    display2=''
+  elif a==17:
+    display1="MY REPLY IS"
+    display2="NO"
+  elif a==18:
+    display1="MY SOURCES SAY"
+    display2="NO"
+  elif a==19:
+    display1="OUTLOOK"
+    display2="NOT SO GOOD"
+  elif a==20:
+    display1="VERY DOUBTFUL"
+    display2=''
+length1=len(display1)
+length2=len(display2)
+line1="┏"+"━"*30+"┓"
+line2="┃"+" "*(math.ceil((30-length1)/2))+display1+" "*(math.floor((30-length1)/2))+"┃"
+line3="┃"+" "*(math.ceil((30-length2)/2))+display2+" "*(math.floor((30-length2)/2))+"┃"
+line4="┗"+"━"*30+"┛"
+print(line1+"\n"+line2+"\n"+line3+"\n"+line4)
