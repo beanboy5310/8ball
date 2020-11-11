@@ -64,10 +64,10 @@ elif a>10:
   elif a==20:
     display1="VERY DOUBTFUL"
     display2=''
-length1=len(display1)
-length2=len(display2)
+length1=(30-len(display1))/2
+length2=(30-len(display2))/2
 line1="┏"+"━"*30+"┓"
-line2="┃"+" "*(math.ceil((30-length1)/2))+display1+" "*(math.floor((30-length1)/2))+"┃"
-line3="┃"+" "*(math.ceil((30-length2)/2))+display2+" "*(math.floor((30-length2)/2))+"┃"
+line2="┃"+" "*(math.ceil(length1))+display1+" "*(math.floor(length1))+"┃"
+line3="┃"+" "*(math.ceil(length2))+display2+" "*(math.floor(length2))+"┃"
 line4="┗"+"━"*30+"┛"
 print(line1+"\n"+line2+"\n"+line3+"\n"+line4)
